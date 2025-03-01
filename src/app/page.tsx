@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-4 mt-12 md:mt-24">
         <h1 className="text-3xl md:text-5xl font-bold max-w-3xl">
-          The Design Studio for 
+          AI Technology Solutions for 
           <div className="mt-2">the <span className="italic">Digital Age</span>.</div>
         </h1>
         
@@ -60,12 +60,12 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-14 px-4 text-center mt-4 md:mt-8">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-8 font-bold text-2xl md:text-3xl">Now accepting new clients.</p>
+          <p className="mb-6 font-medium text-lg">Now accepting new clients.</p>
           <Link 
             href="/contact" 
-            className="inline-block bg-green-500 hover:bg-green-600 text-white py-3 px-12 uppercase tracking-wider text-sm font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white py-4 px-14 uppercase tracking-wider text-base md:text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
-            Contact us
+            CONTACT US
           </Link>
         </div>
       </section>
