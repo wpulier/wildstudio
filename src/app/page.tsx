@@ -23,32 +23,48 @@ export default function Home() {
       </section>
 
       {/* Projects Grid Section */}
-      <section className="px-4 md:px-12 py-10 md:py-16 mx-auto w-full max-w-5xl">
+      <section className="px-4 md:px-12 py-10 md:py-16 mx-auto w-full max-w-4xl">
         <h2 className="text-xl md:text-3xl font-bold text-center mb-6 md:mb-10">
           Selected <span className="italic">Projects</span>
         </h2>
 
-        {/* Project Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-          {projects.map((project, index) => (
-            <Link key={index} href={`/projects/${project.slug}`} className="block">
-              <div className="aspect-square bg-gray-50 flex items-center justify-center p-8 
-                             transition-all duration-500 ease-in-out hover:bg-gray-100 
-                             group relative overflow-hidden">
-                <img 
-                  src={project.logo} 
-                  alt={project.name} 
-                  className="w-full h-full object-contain transition-all duration-500 ease-in-out 
-                           group-hover:scale-110 group-hover:rotate-3"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-5 
-                              transition-all duration-500 flex items-center justify-center opacity-0 
-                              group-hover:opacity-100">
-                  <span className="text-sm font-medium px-3 py-1 bg-white">{project.name}</span>
-                </div>
-              </div>
-            </Link>
-          ))}
+        {/* Project Grid - Tic-tac-toe style */}
+        <div className="border border-gray-200 mx-auto overflow-hidden">
+          <div className="grid grid-cols-3 max-w-3xl mx-auto">
+            {projects.map((project, index) => {
+              // Calculate border classes based on position
+              const isRightBorder = index % 3 !== 2; // Not last in row
+              const isBottomBorder = index < 6; // Not in bottom row
+              
+              return (
+                <Link 
+                  key={index} 
+                  href={`/projects/${project.slug}`} 
+                  className={`
+                    block relative 
+                    ${isRightBorder ? 'border-r border-gray-200' : ''} 
+                    ${isBottomBorder ? 'border-b border-gray-200' : ''}
+                  `}
+                >
+                  <div className="aspect-square h-20 sm:h-28 md:h-36 flex items-center justify-center p-3 sm:p-4 md:p-5
+                               transition-all duration-300 hover:bg-gray-50
+                               group relative overflow-hidden">
+                    <img 
+                      src={project.logo} 
+                      alt={project.name} 
+                      className="w-2/3 h-2/3 object-contain transition-all duration-300 ease-in-out 
+                               group-hover:scale-110 group-hover:rotate-3"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-5 
+                                  transition-all duration-300 flex items-center justify-center opacity-0 
+                                  group-hover:opacity-100">
+                      <span className="text-xs font-medium px-2 py-1 bg-white">{project.name}</span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
     </>
