@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-4 mt-8 md:mt-20">
+      <section className="flex flex-col items-center justify-center text-center px-4 mt-12 md:mt-24">
         <h1 className="text-3xl md:text-5xl font-bold max-w-3xl">
           The Design Studio for 
           <div className="mt-2">the <span className="italic">Digital Age</span>.</div>
         </h1>
         
-        <p className="mt-6 md:mt-8 max-w-2xl text-center text-sm md:text-base">
+        <p className="mt-6 md:mt-8 max-w-2xl text-center text-sm md:text-base text-gray-800">
           From digital interfaces to brand identities to immersive apps, we design
           products for the future. We don't follow trends; we create
           them—driving billion-dollar businesses.
@@ -19,8 +19,8 @@ export default function Home() {
       </section>
 
       {/* Projects Grid Section */}
-      <section className="px-4 md:px-12 py-10 md:py-16 mx-auto w-full max-w-3xl">
-        <h2 className="text-xl md:text-3xl font-bold text-center mb-6 md:mb-10">
+      <section className="px-4 md:px-6 py-12 md:py-16 mx-auto w-full max-w-3xl">
+        <h2 className="text-sm font-medium text-center mb-8">
           Selected <span className="italic">Projects</span>
         </h2>
 
@@ -32,36 +32,23 @@ export default function Home() {
               const isRightBorder = index % 3 !== 2; // Not last in row
               const isBottomBorder = index < 6; // Not in bottom row
               
-              // Add gray background to Adobe cell for matching the image
-              const hasBgColor = project.slug === 'adobe' ? 'bg-gray-100' : '';
-              
               return (
                 <Link 
                   key={index} 
                   href={`/projects/${project.slug}`} 
                   className={`
-                    block relative 
+                    block
                     ${isRightBorder ? 'border-r border-gray-200' : ''} 
                     ${isBottomBorder ? 'border-b border-gray-200' : ''}
-                    ${hasBgColor}
                   `}
                 >
-                  <div className="aspect-square h-[140px] relative
-                               transition-all duration-300 hover:bg-gray-50
-                               group">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <img 
-                        src={project.logo} 
-                        alt={project.name} 
-                        className="w-[60%] h-[60%] object-contain transition-all duration-300 ease-in-out 
-                               group-hover:scale-110 group-hover:rotate-3"
-                      />
-                    </div>
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-5 
-                                  transition-all duration-300 flex items-center justify-center opacity-0 
-                                  group-hover:opacity-100">
-                      <span className="text-xs font-medium px-2 py-1 bg-white">{project.name}</span>
-                    </div>
+                  <div className="h-[110px] w-full flex justify-center items-center group">
+                    <img 
+                      src={project.logo} 
+                      alt={project.name} 
+                      className="w-[42%] h-[42%] object-contain transition-transform duration-200 
+                               group-hover:scale-110"
+                    />
                   </div>
                 </Link>
               );
@@ -70,17 +57,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Age Section */}
-      <section className="py-16 px-4 text-center mt-8 md:mt-16">
+      {/* CTA Section */}
+      <section className="py-12 px-4 text-center mt-0">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Meet the design firm for<br />
-            the <span className="italic">AI age</span>.
-          </h2>
-          <p className="mb-6">Now accepting new clients.</p>
+          <p className="mb-6 font-bold text-xl">Now accepting new clients.</p>
           <Link 
             href="/contact" 
-            className="inline-block bg-green-500 text-white py-2 px-8 uppercase"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white py-3 px-10 uppercase tracking-wider text-sm font-medium transition-colors duration-200"
           >
             Contact us
           </Link>
