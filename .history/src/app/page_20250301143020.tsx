@@ -24,7 +24,7 @@ export default function Home() {
 
         {/* Project Grid */}
         <div className="mx-auto mb-12">
-          <div className="grid grid-cols-3 mx-auto">
+          <div className="grid grid-cols-4 mx-auto">
             {projects.map((project, index) => {
               const isRightBorder = index % 3 !== 2;
               const isBottomBorder = index < 6;
@@ -39,7 +39,7 @@ export default function Home() {
                     ${isBottomBorder ? 'border-b border-gray-200' : ''}
                   `}
                 >
-                  <div className="h-[90px] w-full flex justify-center items-center group">
+                  <div className="h-[100px] w-full flex justify-center items-center group">
                     <img
                       src={project.logo}
                       alt={project.name}

@@ -5,29 +5,29 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-4 mt-8 md:mt-12">
+      <section className="flex flex-col items-center justify-center text-center px-4 mt-12 md:mt-24">
         <h1 className="text-3xl md:text-5xl font-bold max-w-3xl">
-          AI Solutions
+          AI solutions
         </h1>
 
-        <p className="mt-4 md:mt-6 max-w-2xl text-center text-sm md:text-base text-gray-800">
-          Wild Studios develops scaled web apps, tuned AI models,<br />
-          and custom AI solutions for organizations and visionaries.
+        <p className="mt-6 md:mt-8 max-w-2xl text-center text-sm md:text-base text-gray-800">
+          Full-stack web apps, workflow automation, model training, and 3D animation development
         </p>
       </section>
 
       {/* Projects Grid Section */}
-      <section className="px-4 md:px-6 py-12 mx-auto w-full max-w-2xl">
-        <h2 className="text-13 font-medium text-center mb-8">
+      <section className="px-4 md:px-6 py-8 md:py-12 mx-auto w-full max-w-2xl">
+        <h2 className="text-xs font-medium text-center mb-6">
           Selected <span className="italic">Projects</span>
         </h2>
 
         {/* Project Grid */}
-        <div className="mx-auto mb-12">
+        <div className="mx-auto">
           <div className="grid grid-cols-3 mx-auto">
             {projects.map((project, index) => {
-              const isRightBorder = index % 3 !== 2;
-              const isBottomBorder = index < 6;
+              // Calculate border classes based on position
+              const isRightBorder = index % 3 !== 2; // Not last in row
+              const isBottomBorder = index < 6; // Not in bottom row
 
               return (
                 <Link
@@ -43,7 +43,7 @@ export default function Home() {
                     <img
                       src={project.logo}
                       alt={project.name}
-                      className="w-[45%] h-[45%] object-contain transition-transform duration-200 
+                      className="w-[40%] h-[40%] object-contain transition-transform duration-200 
                                group-hover:scale-110"
                     />
                   </div>
@@ -52,13 +52,15 @@ export default function Home() {
             })}
           </div>
         </div>
+      </section>
 
-        {/* CTA Section - Integrated with Projects section */}
-        <div className="text-center mt-8">
+      {/* CTA Section */}
+      <section className="py-10 px-4 text-center mt-0">
+        <div className="max-w-2xl mx-auto">
           <p className="mb-6 font-bold text-lg">Now accepting new clients.</p>
           <Link
             href="/contact"
-            className="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white py-4 px-16 uppercase tracking-wider text-base font-medium transition-colors duration-200"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white py-4 px-14 uppercase tracking-wider text-base md:text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             CONTACT US
           </Link>

@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
-import LegendaryCursorProvider from "@/components/LegendaryCursorProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,15 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LegendaryCursorProvider>
-          <div className="flex flex-col min-h-screen">
-            <Navigation />
-            <main className="flex-grow mb-8">
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </LegendaryCursorProvider>
+        <div className="flex flex-col min-h-screen">
+          <Navigation />
+          <main className="flex-grow mb-8">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

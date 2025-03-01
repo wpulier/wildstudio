@@ -7,18 +7,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-4 mt-8 md:mt-12">
         <h1 className="text-3xl md:text-5xl font-bold max-w-3xl">
-          AI Solutions
+          AI solutions
         </h1>
 
         <p className="mt-4 md:mt-6 max-w-2xl text-center text-sm md:text-base text-gray-800">
-          Wild Studios develops scaled web apps, tuned AI models,<br />
+          Wild Studios develops scalable web apps, fine-tuned AI models,<br />
           and custom AI solutions for organizations and visionaries.
         </p>
       </section>
 
       {/* Projects Grid Section */}
       <section className="px-4 md:px-6 py-12 mx-auto w-full max-w-2xl">
-        <h2 className="text-13 font-medium text-center mb-8">
+        <h2 className="text-xs font-medium text-center mb-8">
           Selected <span className="italic">Projects</span>
         </h2>
 
@@ -39,7 +39,7 @@ export default function Home() {
                     ${isBottomBorder ? 'border-b border-gray-200' : ''}
                   `}
                 >
-                  <div className="h-[90px] w-full flex justify-center items-center group">
+                  <div className="h-[100px] w-full flex justify-center items-center group">
                     <img
                       src={project.logo}
                       alt={project.name}

@@ -12,7 +12,7 @@ export default function Home() {
 
         <p className="mt-4 md:mt-6 max-w-2xl text-center text-sm md:text-base text-gray-800">
           Wild Studios develops scaled web apps, tuned AI models,<br />
-          and custom AI solutions for organizations and visionaries.
+          and custom AI solutions for organizations.
         </p>
       </section>
 
@@ -39,7 +39,7 @@ export default function Home() {
                     ${isBottomBorder ? 'border-b border-gray-200' : ''}
                   `}
                 >
-                  <div className="h-[90px] w-full flex justify-center items-center group">
+                  <div className="h-[100px] w-full flex justify-center items-center group">
                     <img
                       src={project.logo}
                       alt={project.name}
