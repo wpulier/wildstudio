@@ -4,30 +4,29 @@ import { projects } from '@/data/projects';
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-4 mt-12 md:mt-24">
+      {/* Hero Section - Reduced top margin */}
+      <section className="flex flex-col items-center justify-center text-center px-4 mt-8 md:mt-12">
         <h1 className="text-3xl md:text-5xl font-bold max-w-3xl">
           AI solutions
         </h1>
 
-        <p className="mt-6 md:mt-8 max-w-2xl text-center text-sm md:text-base text-gray-800">
+        <p className="mt-4 md:mt-6 max-w-2xl text-center text-sm md:text-base text-gray-800">
           Full-stack web apps, workflow automation, model training, and 3D animation development
         </p>
       </section>
 
-      {/* Projects Grid Section */}
-      <section className="px-4 md:px-6 py-8 md:py-12 mx-auto w-full max-w-2xl">
-        <h2 className="text-xs font-medium text-center mb-6">
+      {/* Projects Grid Section - Reduced padding */}
+      <section className="px-4 md:px-6 py-6 md:py-8 mx-auto w-full max-w-2xl">
+        <h2 className="text-xs font-medium text-center mb-4">
           Selected <span className="italic">Projects</span>
         </h2>
 
-        {/* Project Grid */}
+        {/* Project Grid - Made slightly more compact */}
         <div className="mx-auto">
           <div className="grid grid-cols-3 mx-auto">
             {projects.map((project, index) => {
-              // Calculate border classes based on position
-              const isRightBorder = index % 3 !== 2; // Not last in row
-              const isBottomBorder = index < 6; // Not in bottom row
+              const isRightBorder = index % 3 !== 2;
+              const isBottomBorder = index < 6;
 
               return (
                 <Link
@@ -39,7 +38,7 @@ export default function Home() {
                     ${isBottomBorder ? 'border-b border-gray-200' : ''}
                   `}
                 >
-                  <div className="h-[90px] w-full flex justify-center items-center group">
+                  <div className="h-[80px] w-full flex justify-center items-center group">
                     <img
                       src={project.logo}
                       alt={project.name}
@@ -54,13 +53,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-10 px-4 text-center mt-0">
+      {/* CTA Section - Reduced top padding */}
+      <section className="py-6 px-4 text-center">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-6 font-bold text-lg">Now accepting new clients.</p>
+          <p className="mb-4 font-bold text-lg">Now accepting new clients.</p>
           <Link
             href="/contact"
-            className="inline-block bg-green-500 hover:bg-green-600 text-white py-4 px-14 uppercase tracking-wider text-base md:text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white py-3 px-12 uppercase tracking-wider text-base md:text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             CONTACT US
           </Link>
