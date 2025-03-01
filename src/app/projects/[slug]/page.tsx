@@ -2,11 +2,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { projects, Project } from '@/data/projects';
 
-interface ProjectPageProps {
+type ProjectPageProps = {
   params: {
     slug: string;
   };
-}
+  searchParams?: { [key: string]: string | string[] | undefined };
+};
 
 export function generateStaticParams() {
   return projects.map((project: Project) => ({
@@ -16,7 +17,7 @@ export function generateStaticParams() {
 
 export default function ProjectPage({ params }: ProjectPageProps) {
   const project = projects.find((p: Project) => p.slug === params.slug);
-  
+
   if (!project) {
     notFound();
   }
@@ -27,13 +28,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         {/* Project Header */}
         <div className="flex flex-col md:flex-row items-center mb-12 gap-8">
           <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 bg-gray-50 p-6 flex items-center justify-center">
-            <img 
-              src={project.logo} 
-              alt={project.name} 
+            <img
+              src={project.logo}
+              alt={project.name}
               className="w-full h-full object-contain"
             />
           </div>
-          
+
           <div>
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
               {project.name}
@@ -49,8 +50,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           <section>
             <h2 className="text-2xl font-bold mb-4">Overview</h2>
             <p className="text-gray-700">
-              Working with {project.name} was an extraordinary opportunity to push the boundaries of what's possible. 
-              Our collaboration focused on creating meaningful digital experiences that resonate with users while 
+              Working with {project.name} was an extraordinary opportunity to push the boundaries of what's possible.
+              Our collaboration focused on creating meaningful digital experiences that resonate with users while
               driving business growth.
             </p>
           </section>
@@ -58,8 +59,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           <section>
             <h2 className="text-2xl font-bold mb-4">Challenge</h2>
             <p className="text-gray-700">
-              {project.name} needed to reimagine their digital presence in an increasingly competitive market. 
-              They came to Wild Studios looking for a partner who could help them stand out while maintaining 
+              {project.name} needed to reimagine their digital presence in an increasingly competitive market.
+              They came to Wild Studios looking for a partner who could help them stand out while maintaining
               their core brand values.
             </p>
           </section>
@@ -67,8 +68,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           <section>
             <h2 className="text-2xl font-bold mb-4">Solution</h2>
             <p className="text-gray-700">
-              We developed a comprehensive strategy that focused on user-centered design principles, creating 
-              seamless experiences across all touchpoints. Our team worked closely with {project.name}'s stakeholders 
+              We developed a comprehensive strategy that focused on user-centered design principles, creating
+              seamless experiences across all touchpoints. Our team worked closely with {project.name}'s stakeholders
               to ensure the final product not only met but exceeded expectations.
             </p>
           </section>
@@ -86,8 +87,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
         {/* Back to Projects */}
         <div className="mt-12 pt-8 border-t">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="text-black border border-black px-6 py-3 inline-flex items-center group hover:bg-black hover:text-white transition-colors duration-300"
           >
             <svg className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
