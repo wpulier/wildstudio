@@ -12,15 +12,15 @@ export default function Home() {
         </h1>
         
         <p className="mt-6 md:mt-8 max-w-2xl text-center text-sm md:text-base text-gray-800">
-          From digital interfaces to brand identities to immersive apps, we design
-          products for the future. We don't follow trends; we create
-          them—driving billion-dollar businesses.
+          Specialized in AI strategy, technical implementation, and innovation consulting. 
+          We help businesses leverage cutting-edge technologies to transform their operations 
+          and create competitive advantages.
         </p>
       </section>
 
       {/* Projects Grid Section */}
-      <section className="px-4 md:px-6 py-12 md:py-16 mx-auto w-full max-w-3xl">
-        <h2 className="text-sm font-medium text-center mb-8">
+      <section className="px-4 md:px-6 py-8 md:py-12 mx-auto w-full max-w-2xl">
+        <h2 className="text-xs font-medium text-center mb-6">
           Selected <span className="italic">Projects</span>
         </h2>
 
@@ -42,11 +42,11 @@ export default function Home() {
                     ${isBottomBorder ? 'border-b border-gray-200' : ''}
                   `}
                 >
-                  <div className="h-[110px] w-full flex justify-center items-center group">
+                  <div className="h-[90px] w-full flex justify-center items-center group">
                     <img 
                       src={project.logo} 
                       alt={project.name} 
-                      className="w-[42%] h-[42%] object-contain transition-transform duration-200 
+                      className="w-[40%] h-[40%] object-contain transition-transform duration-200 
                                group-hover:scale-110"
                     />
                   </div>
@@ -58,12 +58,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 px-4 text-center mt-0">
+      <section className="py-14 px-4 text-center mt-4 md:mt-8">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-6 font-bold text-xl">Now accepting new clients.</p>
+          <p className="mb-8 font-bold text-2xl md:text-3xl">Now accepting new clients.</p>
           <Link 
             href="/contact" 
-            className="inline-block bg-green-500 hover:bg-green-600 text-white py-3 px-10 uppercase tracking-wider text-sm font-medium transition-colors duration-200"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white py-3 px-12 uppercase tracking-wider text-sm font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             Contact us
           </Link>
