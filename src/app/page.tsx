@@ -58,9 +58,9 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-14 px-4 text-center mt-4 md:mt-8">
+      <section className="py-10 px-4 text-center mt-0">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-6 font-medium text-lg">Now accepting new clients.</p>
+          <p className="mb-6 font-bold text-lg">Now accepting new clients.</p>
           <Link 
             href="/contact" 
             className="inline-block bg-green-500 hover:bg-green-600 text-white py-4 px-14 uppercase tracking-wider text-base md:text-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
