@@ -24,7 +24,7 @@ export default function Home() {
         </h2>
 
         {/* Project Grid */}
-        <div className="mx-auto mb-12">
+        <div className="mx-auto mb-8">
           <div className="grid grid-cols-3 mx-auto">
             {projects.map((project, index) => {
               const isRightBorder = index % 3 !== 2;
@@ -45,9 +45,9 @@ export default function Home() {
                     <Image 
                       src={project.logo} 
                       alt={project.name}
-                      width={152}
-                      height={152}
-                      className="w-[57%] h-[57%] object-contain transition-all duration-200 
+                      width={164}
+                      height={164}
+                      className="w-[61.5%] h-[61.5%] object-contain transition-all duration-200 
                                group-hover:scale-110"
                     />
                   </div>
