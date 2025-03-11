@@ -18,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-white bg-[radial-gradient(#f0f0f0_1px,transparent_1px)] bg-[length:20px_20px]`}>
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-grow mb-8">
+          <main className="flex-grow mb-6">
             {children}
           </main>
           <Footer />
