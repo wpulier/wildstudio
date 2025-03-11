@@ -61,10 +61,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-4 px-4 text-center mt-0">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-2 font-bold text-base">Now accepting new clients.</p>
+          <p className="mb-5 font-bold text-xl md:text-2xl">Now accepting new clients.</p>
           <Link 
             href="/contact" 
-            className="inline-flex justify-center items-center bg-green-600 hover:bg-green-700 text-white py-3 px-12 uppercase tracking-wider text-sm md:text-base font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-sm border-b-2 border-green-700 hover:border-green-800"
+            className="inline-flex justify-center items-center bg-green-600 hover:bg-green-700 text-white py-3 px-10 uppercase tracking-wider text-sm md:text-base font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-sm border-b-2 border-green-700 hover:border-green-800"
           >
             CONTACT US
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
