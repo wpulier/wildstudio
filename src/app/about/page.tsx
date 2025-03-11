@@ -7,52 +7,39 @@ export default function About() {
         {/* Hero Section */}
         <div className="mb-10 md:mb-16">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">
-            Crafting Purpose in the <span className="italic">Digital Age</span>
+            Making Useful Things People Actually Want
           </h1>
           
-          <p className="text-base md:text-lg mb-4 md:mb-6">
-            AI is shaping the future of software, driving innovation through personalized, purpose-built experiences. 
-            To succeed in this new era, brands must go beyond utility and focus on creating communities that resonate 
-            with their users' deeper aspirations.
-          </p>
-          
           <div className="text-xs md:text-sm text-gray-500">
-            <p>By Wild Studios</p>
-            <p>10.15.2024</p>
+            <p>Wild Studios | October 15, 2024</p>
           </div>
         </div>
 
         {/* Section 01 */}
         <div className="mb-10 md:mb-16">
           <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-            <span className="text-gray-400 font-normal">01</span> intro
+            <span className="text-gray-400 font-normal">01</span> Where We're At
           </h2>
           
           <div className="space-y-3 md:space-y-4 text-sm md:text-base">
             <p>
-              At Wild Studios, we help the world's leading brands design what's next, but before you can dream up 
-              the future, you've got to really get what's happening right now.
+              At Wild Studios, we work with brands and creators to design useful tools and experiences. But before thinking about what's next, you've got to understand what's happening right now.
             </p>
             
             <p>
-              We're at the start of a new revolution, sparked by AI, where knowledge and creation are available to everyone. 
-              We're betting this is going to set off an explosion of new apps, wild experiments, and mind-bending 
-              experiences over the next ten years.
+              We're in a big moment. AI has made it easier and cheaper than ever to build software. Because of that, we think we're about to see tons of new experiments, apps, and genuinely useful tools.
             </p>
             
             <p>
-              Now more than ever, it's crucial to look around and understand how the world is changing. Focusing too narrowly 
-              on your planned features might result in a product that's outdated before it's even finished, especially 
-              given how quickly AI is changing the tech landscape.
+              Things are moving fast. If you build based only on today's assumptions, your product might be old news before you even ship it. AI is changing how software gets made and what users expect from it.
             </p>
             
             <p>
-              These creations won't be copies of what we've seen in the past – they'll feel personalized, purpose-built, 
-              and raise the bar for what we come to expect out of software.
+              We think what's coming won't be the same apps recycled again and again. Instead, it'll be highly personalized tools that feel genuinely built for you and the communities you care about.
             </p>
             
             <p>
-              We call this <span className="italic">The Imagination Era</span>.
+              We're calling this moment the Imagination Era.
             </p>
           </div>
         </div>
@@ -60,42 +47,28 @@ export default function About() {
         {/* Section 02 */}
         <div className="mb-10 md:mb-16">
           <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-            <span className="text-gray-400 font-normal">02</span> how did we get here?
+            <span className="text-gray-400 font-normal">02</span> How Did We Get Here?
           </h2>
           
           <div className="space-y-3 md:space-y-4 text-sm md:text-base">
             <p>
-              Tech revolutions often ignite when costs plummet, and we're on the cusp of that moment. We're entering 
-              an era where anyone can breathe life into their software dreams by simply describing their vision to AI.
+              Big changes usually happen when costs drop significantly, and that's exactly what's happening now. Anyone can now build software by simply describing their idea to AI.
             </p>
             
             <p>
-              Lower costs means more market entrants. And because costs are so low, folks will be more willing to 
-              experiment and take risks. We believe that this will lead to hyper-personalized, community-driven experiences. 
-              Picture apps so tailored, it's like your closest friend designed them just for your inner circle.
+              Lower barriers mean more people jumping in, experimenting, and taking chances. That will lead to software so tailored, it feels like it was designed specifically for you or your community.
             </p>
             
             <p>
-              We've seen this pattern before with media. As costs of production and distribution plummeted, a new era 
-              of personalized content emerged. Just a decade ago, we consumed mass media; now, YouTubers and TikTokers 
-              craft content that feels tailor-made for us. There's a creator for every niche and interest, turning our 
-              feeds into personalized channels. This shift forced traditional media giants to rethink their entire approach, 
-              moving from broad appeal to targeted experiences.
+              We've seen this happen before. Think about media: once making and sharing videos got cheaper, creators flooded platforms like YouTube and TikTok with content perfectly tailored to niche interests. Suddenly, our feeds felt personal, and media giants had to rethink their approach completely.
             </p>
             
             <p>
-              The same is happening with tech. Software is becoming like content. Independent developers, designers, 
-              visionaries, and small teams will create products that compete with the tech giants of our time.
+              This same shift is happening right now with software. Small teams and independent creators are about to compete on equal footing with tech giants.
             </p>
             
             <p>
-              And even if they aren't competing, these "handcrafted" pieces of software will completely change what 
-              users come to expect.
-            </p>
-            
-            <p>
-              For brands, this shift presents a massive opportunity. The window to adapt and innovate is open, but it 
-              won't stay open forever.
+              Brands have a clear opportunity here. The chance to build something unique won't stay open forever.
             </p>
           </div>
         </div>
@@ -103,25 +76,20 @@ export default function About() {
         {/* Section 03 */}
         <div className="mb-10 md:mb-16">
           <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-            <span className="text-gray-400 font-normal">03</span> AI BUILDS TOOLS, BRANDS BUILD PURPOSE
+            <span className="text-gray-400 font-normal">03</span> Tools are Easy, Community is Hard
           </h2>
           
           <div className="space-y-3 md:space-y-4 text-sm md:text-base">
             <p>
-              In the Imagination Era, utility no longer guarantees loyalty. When tasks are straightforward, AI can 
-              often outperform traditional tools.
+              In this era, simply being useful isn't enough. AI can easily build tools, but it can't create community.
             </p>
             
             <p>
-              AI commoditizes tools, but it can't replace community - your product needs to build one. While everyone 
-              rushes to answer the 'what' (what can AI build), brands of tomorrow are taking steps to own the 'why' 
-              (why should your community care). Thoughtful AI design that connects with your community will become the 
-              single most important moat for your brand.
+              Your real competitive edge comes from understanding your users and genuinely connecting with them. You need to offer something that speaks to what they actually care about.
             </p>
             
             <p>
-              In the Imagination Era, success is about connecting with your users' aspirations. Understand them, build 
-              community around them, or get left behind.
+              The next wave of great software isn't just about what you can build—it's about why it matters to your users. Building that kind of meaningful connection is what will truly set your product apart.
             </p>
           </div>
         </div>
@@ -129,25 +97,24 @@ export default function About() {
         {/* Section 04 */}
         <div className="mb-10 md:mb-16">
           <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-            <span className="text-gray-400 font-normal">04</span> Join Us in Shaping the Future
+            <span className="text-gray-400 font-normal">04</span> Build with Us
           </h2>
           
           <div className="space-y-3 md:space-y-4 text-sm md:text-base">
             <p>
-              Whether you're a new founder looking at endless opportunities or an established player using your unique 
-              strengths, understanding this shift is key to shaping the future.
+              If you're a new founder with fresh ideas, or an established brand ready to evolve, understanding this shift is key.
             </p>
             
             <p>
-              At Wild Studios, we don't just prepare for what's next—we design it.
+              At Wild Studios, we don't just prepare for what's next—we help you build it.
             </p>
             
-            <p className="font-medium">
-              Join us.
+            <p>
+              Let's make something meaningful together.
             </p>
             
             <p className="italic">
-              -The team at Wild Studios
+              — The team at Wild Studios
             </p>
           </div>
         </div>
