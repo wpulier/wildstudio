@@ -56,6 +56,7 @@ export default function Home() {
             })}
           </div>
         </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-6 px-4 text-center mt-1">
