@@ -8,12 +8,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-4 mt-6 md:mt-12">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-3xl leading-tight mb-1 md:mb-2">
-          AI-Driven Solutions for 
+          Intelligent Solutions for 
           <div className="mt-1">Tomorrow's <span className="italic">Digital Experiences</span></div>
         </h1>
         
         <h2 className="mt-3 md:mt-5 max-w-2xl text-center text-base md:text-lg text-gray-700 font-medium leading-relaxed mb-2 md:mb-3">
-          We make AI tools—apps, animations, and workflow automations—that get your ideas launched, your brand noticed, and integrate smoothly into your current tech.
+          We make AI apps, animations, and automations—that get your ideas launched, your brand noticed.
         </h2>
       </section>
 
