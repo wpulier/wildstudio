@@ -37,7 +37,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               className="w-full h-full object-contain"
             />
           </div>
-          
+
           <div>
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
               {project.name}
@@ -133,8 +133,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         {/* Back to Projects */}
         <div className="mt-12 pt-8 border-t">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="text-black border border-black px-6 py-3 inline-flex items-center group hover:bg-black hover:text-white transition-colors duration-300"
           >
             <svg className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

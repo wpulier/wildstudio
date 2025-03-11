@@ -24,17 +24,16 @@ export default function Home() {
         </h2>
 
         {/* Project Grid */}
-        <div className="mx-auto">
+        <div className="mx-auto mb-12">
           <div className="grid grid-cols-3 mx-auto">
             {projects.map((project, index) => {
-              // Calculate border classes based on position
-              const isRightBorder = index % 3 !== 2; // Not last in row
-              const isBottomBorder = index < 6; // Not in bottom row
-              
+              const isRightBorder = index % 3 !== 2;
+              const isBottomBorder = index < 6;
+
               return (
-                <Link 
-                  key={index} 
-                  href={`/projects/${project.slug}`} 
+                <Link
+                  key={index}
+                  href={`/projects/${project.slug}`}
                   className={`
                     block group relative overflow-hidden
                     ${isRightBorder ? 'border-r border-gray-200' : ''} 
@@ -57,7 +56,6 @@ export default function Home() {
             })}
           </div>
         </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-6 px-4 text-center mt-1">
