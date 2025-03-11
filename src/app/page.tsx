@@ -24,7 +24,7 @@ export default function Home() {
         </h2>
 
         {/* Project Grid */}
-        <div className="mx-auto mb-8">
+        <div className="mx-auto mb-5">
           <div className="grid grid-cols-3 mx-auto">
             {projects.map((project, index) => {
               const isRightBorder = index % 3 !== 2;
@@ -45,9 +45,9 @@ export default function Home() {
                     <Image 
                       src={project.logo} 
                       alt={project.name}
-                      width={164}
-                      height={164}
-                      className="w-[61.5%] h-[61.5%] object-contain transition-all duration-200 
+                      width={180}
+                      height={180}
+                      className="w-[68%] h-[68%] object-contain transition-all duration-200 
                                group-hover:scale-110"
                     />
                   </div>
@@ -59,12 +59,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-6 px-4 text-center mt-1">
+      <section className="py-4 px-4 text-center mt-0">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-3 font-bold text-base">Now accepting new clients.</p>
+          <p className="mb-2 font-bold text-base">Now accepting new clients.</p>
           <Link 
             href="/contact" 
-            className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white py-3 px-10 uppercase tracking-wider text-sm md:text-base font-medium transition-all duration-200 shadow-md hover:shadow-lg rounded-sm"
+            className="inline-flex justify-center items-center bg-green-600 hover:bg-green-700 text-white py-3 px-12 uppercase tracking-wider text-sm md:text-base font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-sm border-b-2 border-green-700 hover:border-green-800"
           >
             CONTACT US
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
