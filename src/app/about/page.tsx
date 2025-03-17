@@ -18,13 +18,24 @@ export default function About() {
           <div className="py-4 px-5 bg-gray-50 rounded-sm mb-8">
             <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium">Our Specialized Tools</p>
             <div className="flex flex-wrap gap-x-3 gap-y-2 justify-center">
-              {["React Expo", "Next.js", "Backend Development", "Blender", "Premier Pro", 
+              {["React Expo", "Next.js", "Unreal Engine", "Blender", "Premier Pro", 
                 "After Effects", "ComfyUI", "Lora Training", "Wan2.1", "Touch Designer"].map((tool, index) => (
                 <span key={index} className="inline-flex items-center">
                   <span className="text-sm md:text-base text-gray-700">{tool}</span>
                   {index < 9 && <span className="mx-1 text-gray-300">•</span>}
                 </span>
               ))}
+            </div>
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium">Backend Development</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-2 justify-center">
+                {["Python", "FastAPI", "Node.js", "SQL", "MySQL", "Firebase", "Supabase", "Stripe"].map((tool, index) => (
+                  <span key={index} className="inline-flex items-center">
+                    <span className="text-sm md:text-base text-gray-700">{tool}</span>
+                    {index < 7 && <span className="mx-1 text-gray-300">•</span>}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
