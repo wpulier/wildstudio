@@ -10,8 +10,22 @@ export default function About() {
             Making Useful Things People Actually Want
           </h1>
           
-          <div className="text-xs md:text-sm text-gray-500">
+          <div className="text-xs md:text-sm text-gray-500 mb-6">
             <p>Wild Studios | October 15, 2024</p>
+          </div>
+          
+          {/* Specialized Tools */}
+          <div className="py-4 px-5 bg-gray-50 rounded-sm mb-8">
+            <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium">Our Specialized Tools</p>
+            <div className="flex flex-wrap gap-x-3 gap-y-2 justify-center">
+              {["React Expo", "Next.js", "Backend Development", "Blender", "Premier Pro", 
+                "After Effects", "ComfyUI", "Lora Training", "Wan2.1", "Touch Designer"].map((tool, index) => (
+                <span key={index} className="inline-flex items-center">
+                  <span className="text-sm md:text-base text-gray-700">{tool}</span>
+                  {index < 9 && <span className="mx-1 text-gray-300">•</span>}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
 
