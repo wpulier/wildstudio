@@ -110,48 +110,31 @@ export default function Home() {
                 Where We're At
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
-                <p>At Wild Studios, we work with brands and creators to design useful tools and experiences. But before thinking about what's next, you've got to understand what's happening right now.</p>
-                <p>We're in a big moment. AI has made it easier and cheaper than ever to build software. Because of that, we think we're about to see tons of new experiments, apps, and genuinely useful tools.</p>
-                <p>Things are moving fast. If you build based only on today's assumptions, your product might be old news before you even ship it. AI is changing how software gets made and what users expect from it.</p>
-                <p>We think what's coming won't be the same apps recycled again and again. Instead, it'll be highly personalized tools that feel genuinely built for you and the communities you care about.</p>
-                <p>We're calling this moment the Imagination Era.</p>
+                <p>At Wild Studios, we help brands and creators build meaningful tools and experiences.</p>
+                <p>AI is dramatically lowering the barrier to building software. This trend will only accelerate, fundamentally changing how we design and create software-based experiences.</p>
+                <p>Yet building genuinely valuable software—and a sustainable software business—remains complex, time-consuming, and fragile. Hiring good talent feels impossible, even as talented people struggle to find meaningful roles. Wild Studios acknowledges these contradictions without simplifying or avoiding them.</p>
+                <p>We leverage AI's strengths—rapid prototyping, generative media, and agentic workflows—while staying grounded in the practical realities and challenges of building software that genuinely works.</p>
               </div>
             </div>
 
             <div className="relative">
               <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">02</div>
               <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
-                How Did We Get Here?
+                Tools Are Easy, Real Products Are Hard
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
-                <p>Big changes usually happen when costs drop significantly, and that's exactly what's happening now. Anyone can now build software by simply describing their idea to AI.</p>
-                <p>Lower barriers mean more people jumping in, experimenting, and taking chances. That will lead to software so tailored, it feels like it was designed specifically for you or your community.</p>
-                <p>We've seen this happen before. Think about media: once making and sharing videos got cheaper, creators flooded platforms like YouTube and TikTok with content perfectly tailored to niche interests. Suddenly, our feeds felt personal, and media giants had to rethink their approach completely.</p>
-                <p>This same shift is happening right now with software. Small teams and independent creators are about to compete on equal footing with tech giants.</p>
-                <p>Brands have a clear opportunity here. The chance to build something unique won't stay open forever.</p>
+                <p>The next wave of successful software won't rely solely on new tools. Instead, it will blend AI-powered front-end and backend capabilities: AI agents enhancing traditional interfaces, frontend agents interacting seamlessly with backend systems, or entirely headless workflows delivering uniquely generative outcomes.</p>
               </div>
             </div>
 
             <div className="relative">
               <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">03</div>
               <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
-                Tools are Easy, Community is Hard
+                Build With Wild Studios
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
-                <p>In this era, simply being useful isn't enough. AI can easily build tools, but it can't create community.</p>
-                <p>Your real competitive edge comes from understanding your users and genuinely connecting with them. You need to offer something that speaks to what they actually care about.</p>
-                <p>The next wave of great software isn't just about what you can build—it's about why it matters to your users. Building that kind of meaningful connection is what will truly set your product apart.</p>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">04</div>
-              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
-                Build with Us
-              </h2>
-              <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
-                <p>If you're a new founder with fresh ideas, or an established brand ready to evolve, understanding this shift is key.</p>
-                <p>At Wild Studios, we don't just prepare for what's next—we help you build it.</p>
+                <p>Whether you're a startup with bold new ideas or an established brand ready to evolve, the real opportunity lies in balancing innovation with practical execution.</p>
+                <p>At Wild Studios, we don't just anticipate what's next—we help you build it.</p>
                 <p>Let's make something meaningful together.</p>
                 <p className="italic">— The team at Wild Studios</p>
               </div>
