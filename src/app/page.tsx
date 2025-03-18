@@ -79,7 +79,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           {/* Specialized Tools */}
           <div className="py-4 px-5 bg-gray-50 rounded-sm mb-8">
-            <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium">Our Specialized Tools</p>
+            <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium text-center">Our Specialized Tools</p>
             <div className="flex flex-wrap gap-x-3 gap-y-2 justify-center">
               {["React Expo", "Next.js", "Unreal Engine", "Blender", "Premier Pro", 
                 "After Effects", "ComfyUI", "Lora Training", "Wan2.1", "Touch Designer"].map((tool, index) => (
@@ -90,7 +90,7 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-4 pt-4 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium">Backend Development</p>
+              <p className="text-sm text-gray-500 mb-2 uppercase tracking-wider font-medium text-center">Backend Development</p>
               <div className="flex flex-wrap gap-x-3 gap-y-2 justify-center">
                 {["Python", "FastAPI", "Node.js", "SQL", "MySQL", "Firebase", "Supabase", "Stripe"].map((tool, index) => (
                   <span key={index} className="inline-flex items-center">
@@ -104,9 +104,10 @@ export default function Home() {
 
           {/* About Content */}
           <div className="space-y-12 md:space-y-16">
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-                <span className="text-gray-400 font-normal">01</span> Where We're At
+            <div className="relative">
+              <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">01</div>
+              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
+                Where We're At
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
                 <p>At Wild Studios, we work with brands and creators to design useful tools and experiences. But before thinking about what's next, you've got to understand what's happening right now.</p>
@@ -117,9 +118,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-                <span className="text-gray-400 font-normal">02</span> How Did We Get Here?
+            <div className="relative">
+              <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">02</div>
+              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
+                How Did We Get Here?
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
                 <p>Big changes usually happen when costs drop significantly, and that's exactly what's happening now. Anyone can now build software by simply describing their idea to AI.</p>
@@ -130,9 +132,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-                <span className="text-gray-400 font-normal">03</span> Tools are Easy, Community is Hard
+            <div className="relative">
+              <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">03</div>
+              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
+                Tools are Easy, Community is Hard
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
                 <p>In this era, simply being useful isn't enough. AI can easily build tools, but it can't create community.</p>
@@ -141,9 +144,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-                <span className="text-gray-400 font-normal">04</span> Build with Us
+            <div className="relative">
+              <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">04</div>
+              <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
+                Build with Us
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
                 <p>If you're a new founder with fresh ideas, or an established brand ready to evolve, understanding this shift is key.</p>
