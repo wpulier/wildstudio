@@ -115,13 +115,13 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -left-4 md:-left-8 top-0 text-4xl md:text-5xl font-bold text-gray-100 select-none">01</div>
               <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 relative">
-                Where We're At
+                Where We’re At
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
                 <p>At Wild Studios, we help brands and creators build meaningful tools and experiences.</p>
                 <p>AI is dramatically lowering the barrier to building software. This trend will only accelerate, fundamentally changing how we design and create software-based experiences.</p>
                 <p>Yet building genuinely valuable software—and a sustainable software business—remains complex, time-consuming, and fragile. Hiring good talent feels impossible, even as talented people struggle to find meaningful roles. Wild Studios acknowledges these contradictions without simplifying or avoiding them.</p>
-                <p>We leverage AI's strengths—rapid prototyping, generative media, and agentic workflows—while staying grounded in the practical realities and challenges of building software that genuinely works.</p>
+                <p>We leverage AI’s strengths—rapid prototyping, generative media, and agentic workflows—while staying grounded in the practical realities and challenges of building software that genuinely works.</p>
               </div>
             </div>
 
@@ -131,7 +131,7 @@ export default function Home() {
                 Tools Are Easy, Real Products Are Hard
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
-                <p>The next wave of successful software won't rely solely on new tools. Instead, it will blend AI-powered front-end and backend capabilities: AI agents enhancing traditional interfaces, frontend agents interacting seamlessly with backend systems, or entirely headless workflows delivering uniquely generative outcomes.</p>
+                <p>The next wave of successful software won’t rely solely on new tools. Instead, it will blend AI-powered front-end and backend capabilities: AI agents enhancing traditional interfaces, frontend agents interacting seamlessly with backend systems, or entirely headless workflows delivering uniquely generative outcomes.</p>
               </div>
             </div>
 
@@ -141,9 +141,9 @@ export default function Home() {
                 Build With Wild Studios
               </h2>
               <div className="space-y-3 md:space-y-4 text-sm md:text-base text-gray-700">
-                <p>Whether you're a startup with bold new ideas or an established brand ready to evolve, the real opportunity lies in balancing innovation with practical execution.</p>
-                <p>At Wild Studios, we don't just anticipate what's next—we help you build it.</p>
-                <p>Let's make something meaningful together.</p>
+                <p>Whether you’re a startup with bold new ideas or an established brand ready to evolve, the real opportunity lies in balancing innovation with practical execution.</p>
+                <p>At Wild Studios, we don’t just anticipate what’s next—we help you build it.</p>
+                <p>Let’s make something meaningful together.</p>
                 <p className="italic">— The team at Wild Studios</p>
               </div>
             </div>
