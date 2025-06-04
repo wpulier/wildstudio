@@ -1,20 +1,28 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '@/data/projects';
+import NewsletterSection from './components/NewsletterSection';
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center px-4 mt-6 md:mt-12">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-3xl leading-tight mb-1 md:mb-2">
-          Intelligent Solutions for 
-          <div className="mt-1">Tomorrow's <span className="italic">Digital Experiences</span></div>
-        </h1>
-        
-        <h2 className="mt-3 md:mt-5 max-w-2xl text-center text-base md:text-lg text-gray-700 font-medium leading-relaxed mb-2 md:mb-3">
-          We make AI apps, animations, and automations—that get your ideas launched, your brand noticed.
-        </h2>
+      <section className="relative flex items-center justify-center h-[70vh] md:h-[80vh] overflow-hidden text-center px-4 md:px-8">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-700 via-purple-700 to-fuchsia-600 opacity-80" />
+        <div className="relative z-10 flex flex-col items-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
+            Crafting <span className="italic">Beautiful Software</span>
+          </h1>
+          <p className="max-w-2xl text-base md:text-lg text-white/90 mb-6">
+            We help visionary brands launch interactive products and automations.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center bg-white text-black font-semibold text-sm px-8 py-3 uppercase shadow hover:bg-gray-100 transition"
+          >
+            Start Your Project
+          </Link>
+        </div>
       </section>
 
       {/* Projects Grid Section */}
@@ -61,7 +69,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-4 px-4 text-center mt-0">
         <div className="max-w-2xl mx-auto">
-          <p className="mb-6 md:mb-7 font-bold text-xl md:text-2xl">Now accepting new clients.</p>
+          <p className="mb-6 md:mb-7 font-bold text-xl md:text-2xl">We’re currently taking on new clients.</p>
           <Link 
             href="/contact" 
             className="inline-flex justify-center items-center bg-green-600 hover:bg-green-700 text-white py-2.5 sm:py-3 px-8 sm:px-10 uppercase tracking-wider text-sm md:text-base font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-sm border-b-2 border-green-700 hover:border-green-800"
@@ -142,6 +150,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Newsletter Section */}
+      <section className="mt-16 md:mt-24 px-4 md:px-12">
+        <div className="max-w-3xl mx-auto">
+          <NewsletterSection />
+        </div>
+      </section>
     </>
   );
-} 
+}
