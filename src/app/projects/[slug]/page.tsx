@@ -55,7 +55,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Overview</h2>
                 <p className="text-gray-700">
-                  {project.overview || `Working with ${project.name} was an extraordinary opportunity to push the boundaries of what's possible. 
+                  {project.overview || `Working with ${project.name} was an extraordinary opportunity to push the boundaries of what’s possible.
                   Our collaboration focused on creating meaningful digital experiences that resonate with users while 
                   driving business growth.`}
                 </p>
@@ -74,7 +74,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <h2 className="text-2xl font-bold mb-4">Solution</h2>
                 <p className="text-gray-700">
                   {project.solution || `We developed a comprehensive strategy that focused on user-centered design principles, creating 
-                  seamless experiences across all touchpoints. Our team worked closely with ${project.name}'s stakeholders 
+                  seamless experiences across all touchpoints. Our team worked closely with ${project.name}’s stakeholders
                   to ensure the final product not only met but exceeded expectations.`}
                 </p>
               </section>
