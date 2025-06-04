@@ -13,16 +13,10 @@ export default function NewsletterSection() {
       </div>
       
       <div className="max-w-md">
-        <h3 className="text-2xl font-bold mb-2">
-          Exclusive newsletter for 
-        </h3>
-        <h3 className="text-2xl font-bold mb-6">
-          500 of our <span className="italic">closest friends</span>.
-        </h3>
-        
+        <h3 className="text-2xl font-bold mb-4">Join Our Monthly Dispatch</h3>
+
         <p className="mb-6">
-          A curated hit list of our favorite things happening
-          across product, design, and building for the future.
+          Insights on design, automation and building for the future.
         </p>
         
         <button 
