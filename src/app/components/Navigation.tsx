@@ -7,6 +7,7 @@ export default function Navigation() {
         Wild Studios
       </Link>
       <nav className="flex items-center space-x-3 md:space-x-6">
+        <Link href="/work" className="text-sm hover:underline font-medium transition-colors duration-200 hover:text-gray-700">Work</Link>
         <Link href="/about" className="text-sm hover:underline font-medium transition-colors duration-200 hover:text-gray-700">About</Link>
         <Link href="/contact" className="text-sm bg-black text-white px-3 py-1.5 md:px-4 md:py-2 hover:bg-gray-800 transition-colors duration-200">
           CONTACT US
